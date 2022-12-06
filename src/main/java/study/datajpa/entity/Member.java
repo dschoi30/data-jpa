@@ -13,7 +13,7 @@ import javax.persistence.*;
 //        query="select m from Member m where m.username = :username"
 //) 컴파일 시 오류 잡는 장점이 있음, but Repository에서 직접 쿼리 작성 가능
 //@NamedEntityGraph(name = "Member.all", attributeNodes = @NamedAttributeNode("team"))
-public class Member {
+public class Member extends BaseEntity{
 
     @Id @GeneratedValue
     @Column(name = "member_id")
